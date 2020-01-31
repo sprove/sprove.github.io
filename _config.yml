@@ -2,7 +2,7 @@
 # Site
 
 title: sprove for developers
-description: 'sprove: API documentation.'
+description: 'sprove: API documentation'
 url: https://developer.sprove.me
 # google_analytics_key:
 permalink: pretty
@@ -11,7 +11,7 @@ permalink: pretty
 # -----
 # Build
 
-timezone: Etc/UTC
+timezone: Etc/GMT+1
 
 collections:
   documentation:

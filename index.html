@@ -16,8 +16,27 @@ title: API Docs
 					</a>
 					<a class="editor-link" href="cloudcannon:collections/{{ doc.relative_path }}">Edit</a>
 				</h3>
+				{% if doc.subtitle %}
+					<h3>
+						{{ doc.subtitle }}
+						{% if doc.subtitle_type %}
+							<span class="endpoint {{ doc.subtitle_type }}"></span>
+						{% endif %}
+					</h3>
+				{% endif %}
+
 				{% if doc.description %}
 					<p class="description">{{ doc.description }}</p>
+				{% endif %}
+
+				{% if doc.headers and doc.headers[0].name %}
+						<h6>Headers</h6>
+						<dl>
+								{% for header in doc.headers %}
+										<dt>{{ header.name }}</dt>
+										<dd>{{ header.content }}</dd>
+								{% endfor %}
+						</dl>
 				{% endif %}
 
 				{% if doc.parameters and doc.parameters[0].name %}

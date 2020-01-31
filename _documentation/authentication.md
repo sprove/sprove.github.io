@@ -1,15 +1,22 @@
 ---
 title: Authentication
-position_number: 2
-parameters:
-  - name:
-    content:
+position_number: 4
+subtitle: /auth
+subtitle_type: post
+headers:
+  - name: Client-ID
+    content: client_id you've got from us
+  - name: Secret-Key
+    content: secret_key you've gtot from us
 content_markdown: |-
-  You need to be authenticated for all API requests. You can generate an API key in your developer dashboard.
+  You need to be authenticated to make API calls. Please, reach out to us to get credentials to try APIs.
 
-  Add the API key to all requests as a GET parameter.
+  You can generate a token using this request.
 
-  Nothing will work unless you include this API key
+  Please, keep in mind that token is valid for a limited time
+  {: .info }
+
+  Nothing will work unless you generate an API token
   {: .error}
 left_code_blocks:
   - code_block:
@@ -17,13 +24,23 @@ left_code_blocks:
     language:
 right_code_blocks:
   - code_block: |2-
-       $.get("http://api.myapp.com/books/", { "token": "YOUR_APP_KEY"}, function(data) {
-         alert(data);
-       });
+      $.ajax({
+        url: 'https://demo.sprove.me/api/1.0/auth',
+        headers: {
+            'Client-ID': '<client_id>',
+            'Secret-Key': '<secret_key>',
+            'Content-Type': 'application/json'
+        },
+        method: 'POST',
+        dataType: 'json',
+        success: function(data){
+          console.log('succes: ' + data);
+        }
+      });
     title: JQuery
     language: javascript
   - code_block: |2-
-       curl http://api.myapp.com/books?token=YOUR_APP_KEY
+      curl -X POST -i -H "Content-Type: application/json" -H "Client-ID: <client_id>" -H "Secret-Key: <secret_key>" https://demo.sprove.me/api/1.0/auth
     title: Curl
     language: bash
 ---

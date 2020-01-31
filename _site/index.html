@@ -5,17 +5,17 @@
 		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>API Docs | Aviator</title>
+<title>API Docs | sprove for developers</title>
 <meta name="generator" content="Jekyll v3.7.4" />
 <meta property="og:title" content="API Docs" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Jekyll template for API documentation." />
-<meta property="og:description" content="Jekyll template for API documentation." />
+<meta name="description" content="sprove: API documentation" />
+<meta property="og:description" content="sprove: API documentation" />
 <link rel="canonical" href="http://localhost:4000/" />
 <meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Aviator" />
+<meta property="og:site_name" content="sprove for developers" />
 <script type="application/ld+json">
-{"description":"Jekyll template for API documentation.","@type":"WebSite","headline":"API Docs","url":"http://localhost:4000/","name":"Aviator","@context":"http://schema.org"}</script>
+{"description":"sprove: API documentation","@type":"WebSite","headline":"API Docs","url":"http://localhost:4000/","name":"sprove for developers","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -31,7 +31,7 @@
 		<header>
 			<h1>
 				<button type="button" class="open-nav" id="open-nav"></button>
-				<a href="/"><img src="/images/logo.svg" height="40" alt="Aviator logo"></a>
+				<a href="/"><img src="/images/logo.svg" height="40" alt="sprove for developers logo"></a>
 			</h1>
 
 			<form action="/search/" method="get">
@@ -53,6 +53,20 @@
 						<li>
 							<a href="#documentationgetting_started">
 								Getting Started
+								
+							</a>
+						</li>
+					
+						<li>
+							<a href="#documentationaccess_keys">
+								API keys and access
+								
+							</a>
+						</li>
+					
+						<li>
+							<a href="#documentationapi_hosts">
+								API hosts
 								
 							</a>
 						</li>
@@ -82,37 +96,9 @@
 					
 					
 						<li>
-							<a href="#apibooks_list">
-								/books
+							<a href="#apiproperties_list">
+								/properties
 								<span class="endpoint get"></span>
-							</a>
-						</li>
-					
-						<li>
-							<a href="#apibooks_add">
-								/books
-								<span class="endpoint post"></span>
-							</a>
-						</li>
-					
-						<li>
-							<a href="#apibooks_get">
-								/books/:id
-								<span class="endpoint get"></span>
-							</a>
-						</li>
-					
-						<li>
-							<a href="#apibooks_update">
-								/books/:id
-								<span class="endpoint put"></span>
-							</a>
-						</li>
-					
-						<li>
-							<a href="#apibooks_delete">
-								/books/:id
-								<span class="endpoint delete"></span>
 							</a>
 						</li>
 					
@@ -122,12 +108,6 @@
 	
 </div>
 
-
-			<p class="copyright">
-				<a href="https://cloudcannon.com/">
-					Template by CloudCannon
-				</a>
-			</p>
 		</header>
 		<div class="main">
 			
@@ -150,19 +130,100 @@
 
 				
 
-				<p>Welcome to our API.</p>
+				
 
-<p>This API document is designed for those interested in developing for our platform.</p>
+				
 
-<p>This API is still under development and will evolve.</p>
+				<p>Welcome to sprove! Here you’ll find comprehensive information for integrating with our straightforward API. We’ve tried to make this documentation user-friendly and example-filled, but if you have any questions, please don’t hesitate to <a href="mailto:developer@sprove.me">drop us a line</a>.</p>
 
-<p class="success">You’ll succeed if you do this.</p>
+<p>Our API is in beta now and available in sandbox mode, so you need to <a href="mailto:developer@sprove.me">contact us</a> to get your API credentials. We’re working hard on making Quickstart guide, which walks through your entire sprove integration step-by-step. It’ll help if you’ll <a href="mailto:developer@sprove.me">give us a shot</a> with your favorate framework.
+<!-- If you’re planning to use our API in Production, take a look at our Privacy Policy. The fastest way to get your integration up and running is to use our Quickstart guide, which walks through your entire Plaid integration step-by-step. You’ll integrate Plaid Link into your site or app and then use one of our client libraries to retrieve the data you need from our API. --></p>
+
+<p class="success">This is what you’ll get if everything went great.</p>
 
 <p class="info">Here’s some useful information.</p>
 
 <p class="warning">Something may not happen if you try and do this.</p>
 
 <p class="error">Something bad will happen if you do this.</p>
+
+
+				
+			</section>
+			
+		</section>
+	
+		<section class="doc-content">
+			<section class="left-docs">
+				<h3>
+					<a id="documentationaccess_keys">
+						API keys and access
+						
+					</a>
+					<a class="editor-link" href="cloudcannon:collections/_documentation/access_keys.md">Edit</a>
+				</h3>
+				
+
+				
+
+				
+
+				
+
+				<p>To gain access to the sprove API, please reach out to <a href="mailto:hi@sprove.me">us directly</a>. Once you’ve completed the signup process with us and acknowledged our terms, we’ll provide you client_id and secret_key to start using the APIs.</p>
+
+<p class="warning">We’d love to have a kick-off call before the Production launch.</p>
+
+
+				
+			</section>
+			
+		</section>
+	
+		<section class="doc-content">
+			<section class="left-docs">
+				<h3>
+					<a id="documentationapi_hosts">
+						API hosts
+						
+					</a>
+					<a class="editor-link" href="cloudcannon:collections/_documentation/api_hosts.md">Edit</a>
+				</h3>
+				
+
+				
+
+				
+
+				
+
+				<p>We have a Sandbox environment for you to play with and setup integration with your service. When you’re ready, just change the endpoint to the Production.</p>
+
+<p>Current version: <strong>1.0</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Endpoint</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sandbox</td>
+      <td>https://demo.sprove.me/api/[version]</td>
+    </tr>
+    <tr>
+      <td>Production</td>
+      <td>https://app.sprove.me/api/[version]</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- | Sandbox | <a href="https://demo.sprove.me/api/">https://demo.sprove.me/api/[version]</a> | -->
+<!-- | Production | <a href="https://app.sprove.me/api/">https://app.sprove.me/api/[version]</a> | -->
+
+<p class="info">Don’t forget to <a href="mailto:hi@sprove.me">reach out to us</a> to get your Production credentials</p>
 
 
 				
@@ -180,14 +241,38 @@
 					<a class="editor-link" href="cloudcannon:collections/_documentation/authentication.md">Edit</a>
 				</h3>
 				
+					<h3>
+						/auth
+						
+							<span class="endpoint post"></span>
+						
+					</h3>
+				
 
 				
 
-				<p>You need to be authenticated for all API requests. You can generate an API key in your developer dashboard.</p>
+				
+						<h6>Headers</h6>
+						<dl>
+								
+										<dt>Client-ID</dt>
+										<dd>client_id you've got from us</dd>
+								
+										<dt>Secret-Key</dt>
+										<dd>secret_key you've gtot from us</dd>
+								
+						</dl>
+				
 
-<p>Add the API key to all requests as a GET parameter.</p>
+				
 
-<p class="error">Nothing will work unless you include this API key</p>
+				<p>You need to be authenticated to make API calls. Please, reach out to us to get credentials to try APIs.</p>
+
+<p>You can generate a token using this request.</p>
+
+<p class="info">Please, keep in mind that token is valid for a limited time</p>
+
+<p class="error">Nothing will work unless you generate an API token</p>
 
 
 				
@@ -198,16 +283,26 @@
 								
 
 
-<div title="JQuery" class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nx">$</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://api.myapp.com/books/</span><span class="dl">"</span><span class="p">,</span> <span class="p">{</span> <span class="dl">"</span><span class="s2">token</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">YOUR_APP_KEY</span><span class="dl">"</span><span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-   <span class="nx">alert</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
- <span class="p">});</span>
+<div title="JQuery" class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+  <span class="na">url</span><span class="p">:</span> <span class="dl">'</span><span class="s1">https://demo.sprove.me/api/1.0/auth</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">headers</span><span class="p">:</span> <span class="p">{</span>
+      <span class="dl">'</span><span class="s1">Client-ID</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">&lt;client_id&gt;</span><span class="dl">'</span><span class="p">,</span>
+      <span class="dl">'</span><span class="s1">Secret-Key</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">&lt;secret_key&gt;</span><span class="dl">'</span><span class="p">,</span>
+      <span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span>
+  <span class="p">},</span>
+  <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">POST</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">dataType</span><span class="p">:</span> <span class="dl">'</span><span class="s1">json</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">success</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">succes: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">data</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">});</span>
 </code></pre></div></div>
 
 						
 								
 
 
-<div title="Curl" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> curl http://api.myapp.com/books?token<span class="o">=</span>YOUR_APP_KEY
+<div title="Curl" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-X</span> POST <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">-H</span> <span class="s2">"Client-ID: &lt;client_id&gt;"</span> <span class="nt">-H</span> <span class="s2">"Secret-Key: &lt;secret_key&gt;"</span> https://demo.sprove.me/api/1.0/auth
 </code></pre></div></div>
 
 						
@@ -224,6 +319,10 @@
 					</a>
 					<a class="editor-link" href="cloudcannon:collections/_documentation/errors.md">Edit</a>
 				</h3>
+				
+
+				
+
 				
 
 				
@@ -253,9 +352,19 @@
       <td>We could not process that action</td>
     </tr>
     <tr>
+      <td>401</td>
+      <td>Unauthorized</td>
+      <td>Something wrong with the credentials</td>
+    </tr>
+    <tr>
       <td>403</td>
       <td>Forbidden</td>
       <td>We couldn’t authenticate you</td>
+    </tr>
+    <tr>
+      <td>404</td>
+      <td>Not Found</td>
+      <td>This path is not available or requested data not found</td>
     </tr>
   </tbody>
 </table>
@@ -269,8 +378,7 @@
 
 
 <div title="Response" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error message here"</span><span class="w">
+  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error message here"</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
@@ -286,34 +394,41 @@
 		<section class="doc-content">
 			<section class="left-docs">
 				<h3>
-					<a id="apibooks_list">
-						/books
+					<a id="apiproperties_list">
+						/properties
 						
 							<span class="endpoint get"></span>
 						
 					</a>
-					<a class="editor-link" href="cloudcannon:collections/_api/books_list.md">Edit</a>
+					<a class="editor-link" href="cloudcannon:collections/_api/properties_list.md">Edit</a>
 				</h3>
 				
-					<p class="description">List all books</p>
+
+				
+					<p class="description">List all properties</p>
+				
+
 				
 
 				
 						<h6>Parameters</h6>
 						<dl>
 								
-										<dt>offset</dt>
-										<dd>Offset the results by this amount</dd>
+										<dt>page</dt>
+										<dd>(number) Page number. If not specified, first page is displayed.</dd>
 								
-										<dt>limit</dt>
-										<dd>Limit the number of books returned</dd>
+										<dt>per_page</dt>
+										<dd>(number) Page limit. Define how many items to display.</dd>
+								
+										<dt>active</dt>
+										<dd>(boolean, string) Show only active properties</dd>
 								
 						</dl>
 				
 
-				<p class="info">This call will return a maximum of 100 books</p>
+				<p class="info">This call will return a maximum of 100 properties</p>
 
-<p>Lists all the photos you have access to. You can paginate by using the parameters listed above.</p>
+<p>Lists all the properties you have access to. You can paginate by using the parameters listed above.</p>
 
 
 				
@@ -321,8 +436,21 @@
 								
 
 
-<div title="jQuery" class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://api.myapp.com/books/</span><span class="dl">"</span><span class="p">,</span> <span class="p">{</span> <span class="dl">"</span><span class="s2">token</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">YOUR_APP_KEY</span><span class="dl">"</span><span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">alert</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+<div title="jQuery" class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+  <span class="na">url</span><span class="p">:</span> <span class="dl">'</span><span class="s1">https://demo.sprove.me/api/1.0/properties</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">data</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">page</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="na">per_page</span><span class="p">:</span> <span class="mi">50</span>
+  <span class="p">}</span>
+  <span class="nl">headers</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">'</span><span class="s1">Authorization</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">Bearer &lt;token&gt;</span><span class="dl">'</span><span class="p">,</span>
+    <span class="dl">'</span><span class="s1">Content-Type</span><span class="dl">'</span><span class="p">:</span> <span class="dl">'</span><span class="s1">application/json</span><span class="dl">'</span>
+  <span class="p">},</span>
+  <span class="nx">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">GET</span><span class="dl">'</span><span class="p">,</span>
+  <span class="nx">dataType</span><span class="p">:</span> <span class="dl">'</span><span class="s1">json</span><span class="dl">'</span><span class="p">,</span>
+  <span class="nx">success</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">succes: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">data</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">});</span>
 </code></pre></div></div>
 
@@ -330,7 +458,7 @@
 								
 
 
-<div title="Python" class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"http://api.myapp.com/books/"</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="s">"YOUR_APP_KEY"</span><span class="p">)</span>
+<div title="Python" class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s">"https://demo.sprove.me/api/1.0/properties"</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="p">{</span> <span class="s">"Authorization"</span><span class="p">:</span> <span class="s">"Bearer &lt;token&gt;"</span><span class="p">,</span> <span class="s">"Content-Type"</span><span class="p">:</span> <span class="s">"application/json"</span> <span class="p">})</span>
 <span class="k">print</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span>
 </code></pre></div></div>
 
@@ -339,104 +467,21 @@
 
 
 <div title="Node.js" class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">request</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">"</span><span class="s2">request</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">request</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://api.myapp.com/books?token=YOUR_APP_KEY</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="p">{</span>
-<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">error</span> <span class="o">&amp;&amp;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">callback</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">response</span><span class="p">,</span> <span class="nx">body</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">error</span> <span class="o">&amp;&amp;</span> <span class="nx">response</span><span class="p">.</span><span class="nx">statusCode</span> <span class="o">==</span> <span class="mi">200</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+  <span class="p">}</span>
 <span class="p">}</span>
+
+<span class="nx">request</span><span class="p">({</span> <span class="na">url</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://demo.sprove.me/api/1.0/properties</span><span class="dl">"</span><span class="p">,</span> <span class="na">qs</span><span class="p">:</span> <span class="p">{</span> <span class="na">page</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="na">per_page</span><span class="p">:</span> <span class="mi">50</span> <span class="p">},</span> <span class="na">headers</span><span class="p">:</span> <span class="p">{</span> <span class="dl">"</span><span class="s2">Authorization</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Bearer &lt;token&gt;</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Content-Type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">application/json</span><span class="dl">"</span> <span class="p">}},</span> <span class="nx">callback</span><span class="p">)</span>
 </code></pre></div></div>
 
 								
 								
 
 
-<div title="Curl" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://sampleapi.readme.com/orders?key<span class="o">=</span>YOUR_APP_KEY
-</code></pre></div></div>
-
-								
-						
-			</section>
-			
-					<section class="right-code">
-						
-								
-
-
-<div title="Response" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Hunger Games"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mf">4.5</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"dateAdded"</span><span class="p">:</span><span class="w"> </span><span class="s2">"12/12/2013"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Hunger Games"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mf">4.7</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"dateAdded"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15/12/2013"</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre></div></div>
-
-						
-								
-
-
-<div title="Error" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid offset"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-						
-				</section>
-			
-		</section>
-	
-		<section class="doc-content">
-			<section class="left-docs">
-				<h3>
-					<a id="apibooks_add">
-						/books
-						
-							<span class="endpoint post"></span>
-						
-					</a>
-					<a class="editor-link" href="cloudcannon:collections/_api/books_add.md">Edit</a>
-				</h3>
-				
-					<p class="description">Create Book</p>
-				
-
-				
-						<h6>Parameters</h6>
-						<dl>
-								
-										<dt>title</dt>
-										<dd>The title for the book</dd>
-								
-										<dt>score</dt>
-										<dd>The book's score between 0 and 5</dd>
-								
-						</dl>
-				
-
-				<p class="success">The book will automatically be added to your reading list</p>
-
-<p>Adds a book to your collection.</p>
-
-
-				
-						
-								
-
-
-<div title="jQuery" class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://api.myapp.com/books/</span><span class="dl">"</span><span class="p">,</span> <span class="p">{</span>
-  <span class="dl">"</span><span class="s2">token</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">YOUR_APP_KEY</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">title</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">The Book Thief</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">score</span><span class="dl">"</span><span class="p">:</span> <span class="mf">4.3</span>
-<span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">alert</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-<span class="p">});</span>
+<div title="Curl" class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-i</span> <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">-H</span> <span class="s2">"Authorization: Bearer &lt;token&gt;"</span> https://demo.sprove.me/api/1.0/properties?page<span class="o">=</span>2&amp;per_page<span class="o">=</span>50&amp;active<span class="o">=</span><span class="nb">true</span>
 </code></pre></div></div>
 
 								
@@ -449,233 +494,20 @@
 
 
 <div title="Response" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Book Thief"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mf">4.3</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"dateAdded"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5/1/2015"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-						
-								
-
-
-<div title="Error" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid score"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-						
-				</section>
-			
-		</section>
-	
-		<section class="doc-content">
-			<section class="left-docs">
-				<h3>
-					<a id="apibooks_get">
-						/books/:id
-						
-							<span class="endpoint get"></span>
-						
-					</a>
-					<a class="editor-link" href="cloudcannon:collections/_api/books_get.md">Edit</a>
-				</h3>
-				
-					<p class="description">Get Book</p>
-				
-
-				
-
-				<p>Returns a specific book from your collection</p>
-
-
-				
-						
-								
-
-
-<div title="jQuery" class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://api.myapp.com/books/3</span><span class="dl">"</span><span class="p">,</span> <span class="p">{</span>
-  <span class="na">token</span><span class="p">:</span> <span class="dl">"</span><span class="s2">YOUR_APP_KEY</span><span class="dl">"</span><span class="p">,</span>
-<span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">alert</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-<span class="p">});</span>
-</code></pre></div></div>
-
-								
-						
-			</section>
-			
-					<section class="right-code">
-						
-								
-
-
-<div title="Response" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Book Thief"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mf">4.3</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"dateAdded"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5/1/2015"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-						
-								
-
-
-<div title="Error" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Book doesn't exist"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-						
-				</section>
-			
-		</section>
-	
-		<section class="doc-content">
-			<section class="left-docs">
-				<h3>
-					<a id="apibooks_update">
-						/books/:id
-						
-							<span class="endpoint put"></span>
-						
-					</a>
-					<a class="editor-link" href="cloudcannon:collections/_api/books_update.md">Edit</a>
-				</h3>
-				
-					<p class="description">Update Book</p>
-				
-
-				
-						<h6>Parameters</h6>
-						<dl>
-								
-										<dt>title</dt>
-										<dd>The title for the book</dd>
-								
-										<dt>score</dt>
-										<dd>The book's score between 0 and 5</dd>
-								
-						</dl>
-				
-
-				<p>Update an existing book in your collection.</p>
-
-
-				
-						
-								
-
-
-<div title="jQuery" class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
-  <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://api.myapp.com/books/3</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">PUT</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">data</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
-    <span class="dl">"</span><span class="s2">token</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">YOUR_APP_KEY</span><span class="dl">"</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">score</span><span class="dl">"</span><span class="p">:</span> <span class="mf">5.0</span><span class="p">,</span>
-    <span class="dl">"</span><span class="s2">title</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">The Book Stealer</span><span class="dl">"</span>
-  <span class="p">},</span>
-  <span class="dl">"</span><span class="s2">success</span><span class="dl">"</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">});</span>
-</code></pre></div></div>
-
-								
-						
-			</section>
-			
-					<section class="right-code">
-						
-								
-
-
-<div title="Response" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Book Stealer"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"score"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"dateAdded"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5/1/2015"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-						
-								
-
-
-<div title="Error" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Book doesn't exist"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-						
-				</section>
-			
-		</section>
-	
-		<section class="doc-content">
-			<section class="left-docs">
-				<h3>
-					<a id="apibooks_delete">
-						/books/:id
-						
-							<span class="endpoint delete"></span>
-						
-					</a>
-					<a class="editor-link" href="cloudcannon:collections/_api/books_delete.md">Edit</a>
-				</h3>
-				
-					<p class="description">Deletes a book</p>
-				
-
-				
-
-				<p>Deletes a book in your collection.</p>
-
-
-				
-						
-								
-
-
-<div title="jQuery" class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
-  <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://api.myapp.com/books/3</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">DELETE</span><span class="dl">"</span><span class="p">,</span>
-  <span class="dl">"</span><span class="s2">data</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
-    <span class="dl">"</span><span class="s2">token</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">YOUR_APP_KEY</span><span class="dl">"</span>
-  <span class="p">},</span>
-  <span class="dl">"</span><span class="s2">success</span><span class="dl">"</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">});</span>
-</code></pre></div></div>
-
-								
-						
-			</section>
-			
-					<section class="right-code">
-						
-								
-
-
-<div title="Response" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"deleted"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-						
-								
-
-
-<div title="Error" class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Book doesn't exist"</span><span class="w">
+  </span><span class="nl">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"b685e471-b546-49a7-9fbc-30e3303c46b6"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Olav kyres gate 1"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rent_cents"</span><span class="p">:</span><span class="w"> </span><span class="mi">750000</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"rent_currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NOK"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"deposit_cents"</span><span class="p">:</span><span class="w"> </span><span class="mi">1500000</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"deposit_currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NOK"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"verification_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://demo.sprove.me/properties/b685e471-b546-49a7-9fbc-30e3303c46b6"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"per_page"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
