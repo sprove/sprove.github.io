@@ -17,7 +17,7 @@ parameters:
   - name: deposit_currency
     content: '(string) Currency code: 3-letter following ISO-4217 (optional)'
 content_markdown: |-
-  Please, note that all fields should be put under the 'peroprty' key
+  Please, note that all fields should be put under the 'property' key
   {: .warning }
 
   Add a new property to the account

@@ -5,7 +5,7 @@ parameters:
   - name:
     content:
 content_markdown: |-
-  To gain access to the sprove API, please reach out to <a href="mailto:hi@sprove.me">us directly</a>. Once you’ve completed the signup process with us and acknowledged our terms, we’ll provide you client_id and secret_key to start using the APIs.
+  To gain access to the sprove API, please reach out to <a href="mailto:hi@sprove.me">us directly</a>. Once you’ve completed the sign up process with us and acknowledged our terms, we’ll provide you client_id and secret_key to start using the APIs.
 
   We'd love to have a kick-off call before the Production launch.
   {: .warning }

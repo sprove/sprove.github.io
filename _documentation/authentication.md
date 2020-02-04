@@ -7,7 +7,7 @@ headers:
   - name: Client-ID
     content: client_id you've got from us
   - name: Secret-Key
-    content: secret_key you've gtot from us
+    content: secret_key you've got from us
 content_markdown: |-
   You need to be authenticated to make API calls. Please, reach out to us to get credentials to try APIs.
 

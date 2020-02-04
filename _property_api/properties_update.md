@@ -17,7 +17,7 @@ parameters:
   - name: deposit_currency
     content: '(string) Currency code: 3-letter following ISO-4217.'
 content_markdown: |-
-  Please, note that at least one field should be set under the 'peroprty' key
+  Please, note that at least one field should be set under the 'property' key
   {: .warning }
 
   Update the property by the ID.
