@@ -17,9 +17,16 @@ collections:
   documentation:
     title: Documentation
     position_number: 1
-  api:
+  api_title_only:
     title: APIs
     position_number: 2
+  property_api:
+    title: Properties
+    position_number: 3
+  check_api:
+    title: Checks
+    position_number: 4
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
@@ -41,7 +48,12 @@ defaults:
       _hide_content: true
   -
     scope:
-      type: "api"
+      type: "property_api"
+    values:
+      _hide_content: true
+  -
+    scope:
+      type: "check_api"
     values:
       _hide_content: true
 
