@@ -75,17 +75,26 @@ right_code_blocks:
           {
             "tenant_name": "John Doe",
             "approved": true,
-            "valid_until": 1579357302
+            "valid_until": 1579357302,
+            "max_rent": 10000,
+            "avg_wage": 25000,
+            "current_rent": 8000
           },
           {
             "tenant_name": "Jane Doe",
             "approved": false,
-            "valid_until": null
+            "valid_until": null,
+            "max_rent": 5000,
+            "avg_wage": 15000,
+            "current_rent": 3500
           },
           {
             "tenant_name": "Olav Nordmann",
             "approved": true,
-            "valid_until": 1599357302
+            "valid_until": 1599357302,
+            "max_rent": 18000,
+            "avg_wage": 35000,
+            "current_rent": 12000
           }
         ],
         "property_id": "c639a690-5650-4a0b-a91c-cb60d6eca1a8"
